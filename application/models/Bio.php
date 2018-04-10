@@ -1,24 +1,25 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Biodata extends CI_Model {
+class Bio extends CI_Model {
 
 	public function __construct()
 	{
 		parent::__construct();
 		//Do your magic here
+		$this->load->database();
 	}
 	//semua method digunakan untuk proses yang berhubungan dengan databse
 	public function getBiodataQueryArray()
 	{
-		$query = $this->db->query('Select * from biodata');
-		return $query->result_array();
+		$query = $this->db->get('biodata');
+		return $query;
 	}
 
 	public function getBiodataQueryObject()
 	{
 		$query = $this->db->query('Select * from biodata');
-		return $query->result();
+		return $query;
 	}
 
 	public function getBiodataBuilderArray()

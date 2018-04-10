@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>DaniBlog</title>
-		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css">
 	</head>
@@ -28,9 +27,9 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="<?php echo site_url()?>/home">Home</a></li>
+								<li><a href="<?php echo site_url()?>/home">Home</a></li>
 								<li><a href="<?php echo site_url()?>/about">About</a></li>
-								<li><a href="<?php echo site_url()?>/contact">Contact</a></li>
+								<li class="active"><a href="<?php echo site_url()?>/contact">Contact</a></li>
 								<li><a href="<?php echo site_url()?>/news">News</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
@@ -45,42 +44,21 @@
 							</div><!-- /.navbar-collapse -->
 						</div>
 					</nav>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<h1>Biodata</h1>
-							<div class="table-responsive">
-								<table class="table table-hover">
-									<tbody>
-										<?php foreach ($biodata_array as $key) {?>
-										<tr>
-											<td><?php echo $key['nama']?></td>
-										</tr>
-										<tr>
-											<td><?php echo $key['nim']?></td>
-										</tr>
-										<tr>
-											<td><?php echo $key['alamat']?></td>
-										</tr>
-<?php  									}?>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						</div>
-					
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h2>Selamat datang di DaniBlog yang paling Update masa kini!!</h2>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h2>Disini Anda bisa menemukan pasangan Anda secara gratis, Ayo buruan jangan sampai ketinggalan!!</h2>
+					<div class="jumbotron">
+					<div class="container">
+						<h1>Pemilik Blogs : Dani Syahrul A</h1>
+				 		<h1>No Telp : 085790394891</h1>
+				 		<h1>Email : danisyahrul31@gmail.com</h1>
+						
 					</div>
 				</div>
 			</div>
-			<!-- jQuery -->
-			<script src="//code.jquery.com/jquery.js"></script>
-			<!-- Bootstrap JavaScript -->
-			<script src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
-			<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-			<script src="Hello World"></script>
-		</body>
-	</html>
+		</div>
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="Hello World"></script>
+	</body>
+</html>
